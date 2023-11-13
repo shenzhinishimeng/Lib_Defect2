@@ -39,5 +39,5 @@ dependencies {
 //    api 'com.github.shenzhinishimeng:catail_lib_commons:1.0.40'
 
 //    api project(':Lib_Common') //基础工具类
-    implementation 'com.github.shenzhinishimeng:catail_lib_commons:2.0.0'
+    api 'com.github.shenzhinishimeng:catail_lib_commons:2.0.0'
 }
