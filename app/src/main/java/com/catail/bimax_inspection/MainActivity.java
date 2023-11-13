@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.catail.bimax_defect2.f_defect2.activity.Defect2ApplyActivity;
+import com.catail.bimax_defect2.f_defect2.activity.Defect2StatisticsHomeActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,7 +22,8 @@ public class MainActivity extends AppCompatActivity {
         bt_open_defect.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Defect2ApplyActivity.class);
+                Intent intent = new Intent(MainActivity.this,
+                        Defect2StatisticsHomeActivity.class);
                 startActivity(intent);
             }
         });
