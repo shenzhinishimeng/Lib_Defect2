@@ -270,17 +270,17 @@ public class Defect2StatisticsHomeActivity extends BaseActivity implements View.
                 getCameraPersimmions();
             }
         } else if (v.getId() == R.id.title_bar_right2) {
-//            Intent inspectionIntent = new Intent(mContext, Defect2DrawingListActivity.class);
-//            inspectionIntent.putExtra("mApplyPower", mApplyPower);
-//            inspectionIntent.putExtra("mDraftPower", mDraftPower);
-//            inspectionIntent.putExtra("defect_type", mDefectType);
-//            mContext.startActivity(inspectionIntent);
+            Intent inspectionIntent = new Intent(mContext, Defect2DrawingListActivity.class);
+            inspectionIntent.putExtra("mApplyPower", mApplyPower);
+            inspectionIntent.putExtra("mDraftPower", mDraftPower);
+            inspectionIntent.putExtra("defect_type", mDefectType);
+            mContext.startActivity(inspectionIntent);
         } else if (v.getId() == R.id.title_bar_right1) {
-//            Intent inspectionIntent = new Intent(mContext, Defect2ListActivity.class);
-//            inspectionIntent.putExtra("mApplyPower", mApplyPower);
-//            inspectionIntent.putExtra("mDraftPower", mDraftPower);
-//            inspectionIntent.putExtra("defect_type", mDefectType);
-//            mContext.startActivity(inspectionIntent);
+            Intent inspectionIntent = new Intent(mContext, Defect2ListActivity.class);
+            inspectionIntent.putExtra("mApplyPower", mApplyPower);
+            inspectionIntent.putExtra("mDraftPower", mDraftPower);
+            inspectionIntent.putExtra("defect_type", mDefectType);
+            mContext.startActivity(inspectionIntent);
         }
     }
 
