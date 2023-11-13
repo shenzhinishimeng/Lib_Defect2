@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_background">
+
+
+    <TextView
+        android:id="@+id/tv_statistic_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_15"
+        android:layout_marginTop="@dimen/margin_15"
+        android:gravity="center"
+        tools:text="@string/task_overall_view"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black_textcolor_000000"
+        android:textSize="@dimen/textsize_16"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/ins_sta_icon" />
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/ins_chart"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp" />
+
+    <TextView
+        android:id="@+id/tv_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ins_chart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_15"
+        android:layout_marginBottom="@dimen/margin_15"
+        android:gravity="center"
+        android:textColor="@color/black_textcolor_000000"
+        android:textSize="@dimen/textsize_14"
+        tools:text="99" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_list"
+        android:background="@drawable/gray_coner_eeeeee_bg_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_total"
+        android:layout_marginLeft="@dimen/margin_15"
+        android:padding="2dp"
+        android:layout_marginRight="@dimen/margin_15" />
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/menu_pop_bg"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/top_conner_blue_bg_5"
+        android:gravity="center"
+        android:textColor="@color/white_textcolor"
+        android:textSize="@dimen/textsize_15" />
+
+    <EditText
+        android:id="@+id/et_keywords_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height_40"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/iv_del"
+        android:layout_toRightOf="@+id/iv_bes_log"
+        android:background="@null"
+        android:imeOptions="actionSearch"
+        android:paddingLeft="@dimen/padding_10"
+        android:singleLine="true"
+        android:textColor="@color/black_textcolor_666666"
+        android:textColorHint="@color/black_textcolor_666666"
+        android:textSize="@dimen/textsize_14"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/gray_background_F6F6F6"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_coner_bg_5"
+        android:divider="@null"
+        android:scrollbars="none" />
+
+    <View
+        android:id="@+id/view_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/bottom_conner_f7f7f7_bg_5"
+        android:visibility="gone" />
+</LinearLayout>

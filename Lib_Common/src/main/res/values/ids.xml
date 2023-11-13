@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tag_first" type="id"/>
+
+    <!-- ZXing二维码扫描 -->
+
+    <item name="translucent_view" type="id"/>
+</resources>

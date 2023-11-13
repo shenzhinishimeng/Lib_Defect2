@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 按下 -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+
+            <!-- 填充的颜色 -->
+            <solid android:color="#FFFFFF" />
+
+            <!-- android:radius 弧形的半径 -->
+            <corners android:radius="5dp" />
+            <!-- 渐变 -->
+<!--            <gradient android:angle="180" android:endColor="@color/blue_background" android:startColor="@color/blue_background_00b6be" />-->
+            <gradient android:angle="0"
+                android:startColor="@color/blue_background"
+                android:centerColor="@color/blue_background"
+                android:endColor="@color/blue_background"/>
+            <item android:name="android:shadowDx">0</item>
+            <item android:name="android:shadowDy">1</item>
+            <item android:name="android:shadowColor">#3310afc0</item>
+        </shape>
+    </item>
+    <!-- 抬起 -->
+    <item android:state_pressed="false">
+        <shape android:shape="rectangle">
+
+            <!-- 填充的颜色 -->
+            <solid android:color="@color/blue_background" />
+            <!-- android:radius 弧形的半径 -->
+            <corners android:radius="5dp" />
+            <!-- 渐变 -->
+<!--            <gradient android:angle="180" android:endColor="@color/blue_background_00B6BE" android:startColor="@color/blue_background" />-->
+            <gradient android:angle="0"
+                android:startColor="@color/blue_background"
+                android:centerColor="@color/blue_background"
+                android:endColor="@color/blue_background"/>
+            <item android:name="android:shadowDx">0</item>
+            <item android:name="android:shadowDy">1</item>
+            <item android:name="android:shadowColor">#3310afc0</item>
+        </shape>
+    </item>
+</selector>

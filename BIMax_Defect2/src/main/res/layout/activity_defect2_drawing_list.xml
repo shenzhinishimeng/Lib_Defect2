@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background_F7F7F7"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height_35"
+        android:layout_marginLeft="@dimen/margin_12"
+        android:layout_marginTop="@dimen/margin_15"
+        android:layout_marginRight="@dimen/margin_12"
+        android:background="@color/white_background"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_block"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/inspection_location_arrow"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:hint="@string/inspection_block_area"
+            android:paddingRight="@dimen/padding_10"
+            android:singleLine="true"
+            android:textColor="@color/blue_textcolor_39bcca"
+            android:textColorHint="@color/gray_textcolor_E6E6E6"
+            android:textSize="@dimen/textsize_15" />
+
+        <TextView
+            android:id="@+id/tv_leavel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/inspection_location_arrow"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:hint="@string/materials_level"
+            android:paddingRight="@dimen/padding_10"
+            android:singleLine="true"
+            android:textColor="@color/blue_textcolor_39bcca"
+            android:textColorHint="@color/gray_textcolor_E6E6E6"
+            android:textSize="@dimen/textsize_15" />
+
+        <TextView
+            android:id="@+id/tv_zone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/inspection_location_arrow"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:hint="@string/materials_zone"
+            android:paddingRight="@dimen/padding_10"
+            android:singleLine="true"
+            android:textColor="@color/blue_textcolor_39bcca"
+            android:textColorHint="@color/gray_textcolor_E6E6E6"
+            android:textSize="@dimen/textsize_15" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@mipmap/block_empty" />
+
+        <com.catail.lib_commons.view.RectPinView
+            android:id="@+id/pin_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_15" />
+    </LinearLayout>
+
+    <include
+        layout="@layout/bottom_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height_54"
+        android:layout_alignParentBottom="true" />
+</LinearLayout>

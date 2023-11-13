@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.catail.lib_commons.view.SwipeItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_background_F7F7F7"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@drawable/white_coner_bg_5"
+            android:padding="@dimen/padding_8">
+
+            <ImageView
+                android:id="@+id/iv_inspection_no_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ins_list_orange_icon" />
+
+            <TextView
+                android:id="@+id/tv_inspection_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_toRightOf="@+id/iv_inspection_no_status"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/orange_textcolor_FA9A18"
+                android:textSize="@dimen/textsize_16"
+                android:textStyle="bold"
+                android:visibility="visible"
+                tools:text="L00001" />
+
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tv_inspection_no"
+                android:layout_alignBottom="@+id/tv_inspection_no"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:textColor="@color/gray_textcolor"
+                android:textSize="@dimen/textsize_12"
+                tools:text="21 Mar 2021  09:00" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_below="@+id/tv_inspection_no"
+                android:layout_marginTop="@dimen/margin_12"
+                android:layout_toLeftOf="@+id/tv_name"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/black_textcolor_222222"
+                android:textSize="@dimen/textsize_14"
+                tools:text="Content/Description Content description " />
+
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_below="@+id/tv_inspection_no"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/margin_12"
+                android:background="@drawable/blue_circle"
+                android:gravity="center"
+                android:textColor="@color/white_textcolor"
+                android:textSize="@dimen/textsize_9"
+                tools:text="Main Con" />
+
+            <TextView
+                android:id="@+id/tv_block"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_name"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/black_textcolor_666666"
+                android:textSize="@dimen/textsize_12"
+                tools:text="1/5" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_right_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/yellow_coner_bg_5"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_request_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10"
+            android:text="@string/inspection_request_to_modify"
+            android:textColor="@color/black_textcolor_222222"
+            android:textSize="@dimen/textsize_14" />
+
+        <TextView
+            android:id="@+id/tv_unlock_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10"
+            android:visibility="gone"
+            android:text="@string/inspection_unlock_the_form"
+            android:textColor="@color/black_textcolor_222222"
+            android:textSize="@dimen/textsize_14" />
+
+    </LinearLayout>
+</com.catail.lib_commons.view.SwipeItemLayout>

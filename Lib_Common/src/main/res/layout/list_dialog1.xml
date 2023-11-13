@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_coner_bg_5"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/top_conner_blue_bg_5"
+        android:gravity="center"
+        android:text="@string/home_project_list"
+        android:textColor="@color/white_textcolor"
+        android:textSize="@dimen/textsize_18" />
+
+
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/white_background"
+        android:gravity="center_vertical"
+        android:hint="@string/progress_sub_task_please_enter_count"
+        android:minLines="2"
+        android:paddingLeft="@dimen/margin_15"
+        android:paddingRight="@dimen/margin_15"
+        android:textColor="@color/black_textcolor_606266"
+        android:textColorHint="@color/gray_textcolor_D2D2D2"
+        android:textSize="@dimen/textsize_14"
+        android:visibility="gone" />
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_background_F6F6F6"
+        android:paddingLeft="@dimen/padding_14"
+        android:paddingRight="@dimen/padding_14"
+        android:visibility="gone" />
+
+
+    <ExpandableListView
+        android:id="@+id/expand_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="0dp"
+        android:divider="@null"
+        android:scrollbars="none"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/dialog_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:scrollbars="none" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/dialog_list1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:scrollbars="none"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/dialog_list2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:scrollbars="none"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height_64"
+        android:layout_below="@+id/view_bottom_line"
+        android:layout_marginLeft="@dimen/margin_15"
+        android:layout_marginRight="@dimen/margin_15"
+        android:background="@color/white_background"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/item_height_44"
+            android:layout_gravity="center"
+            android:layout_marginRight="7.5dp"
+            android:layout_marginBottom="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/new_button_next_shape"
+            android:padding="10dp"
+            android:text="@string/ptw_dialog_cancle"
+            android:textColor="@color/white_textcolor" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/item_height_44"
+            android:layout_gravity="center"
+            android:layout_marginLeft="7.5dp"
+            android:layout_marginBottom="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/new_button_next_shape"
+            android:padding="10dp"
+            android:text="@string/btn_submit"
+            android:textColor="@color/white_textcolor" />
+    </LinearLayout>
+
+</LinearLayout>

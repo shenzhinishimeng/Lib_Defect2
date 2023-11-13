@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application android:name="com.catail.bimax_defect2.BIMaxDefect2Application">
+        <activity
+            android:name="com.catail.bimax_defect2.f_defect2.activity.Defect2ApplyActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.catail.bimax_defect2.f_defect2.activity.Defect2CategorySelectActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.catail.bimax_defect2.f_defect2.activity.Defect2DetailsActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.catail.bimax_defect2.f_defect2.activity.Defect2DrawingListActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.catail.bimax_defect2.f_defect2.activity.Defect2ListActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.catail.bimax_defect2.f_defect2.activity.Defect2ListFilterActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.catail.bimax_defect2.f_defect2.activity.Defect2StatisticsHomeActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.catail.bimax_defect2.f_defect2.activity.Defect2TypeSelectActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.catail.bimax_defect2.f_defect2.activity.Defect2UnitActivity"
+            android:exported="true" />
+
+    </application>
+</manifest>

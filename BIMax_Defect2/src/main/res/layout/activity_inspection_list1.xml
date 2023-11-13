@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background_F7F7F7"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.flyco.tablayout.SlidingTabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height_44"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_vertical"
+        android:background="@color/gray_background_F7F7F7"
+        app:tabGravity="fill"
+        app:tl_indicator_color="@color/blue_background"
+        app:tl_indicator_width="@dimen/item_height_50"
+        app:tl_indicator_width_equal_title="true"
+        app:tl_textBold="true"
+        app:tl_textSelectColor="@color/blue_textcolor_39bcca"
+        app:tl_textUnselectColor="@color/black_textcolor_666666"
+        app:tl_textsize="@dimen/textsize_15" />
+
+    <com.catail.lib_commons.view.NoScrollViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
