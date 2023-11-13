@@ -40,6 +40,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
     implementation 'androidx.core:core-ktx:1.7.0'
 
-    implementation project(':Lib_Common') //基础工具类
+//    implementation project(':Lib_Common') //基础工具类
+    implementation 'com.github.shenzhinishimeng:catail_lib_commons:2.0.0'
     implementation project(':BIMax_Defect2') //defect 模块.
 }
