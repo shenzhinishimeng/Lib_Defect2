@@ -33,13 +33,24 @@ public class InsCommentPhotoAdapter extends BaseQuickAdapter<String, BaseViewHol
         iv_del_photo.setVisibility(View.INVISIBLE);
 
 
+        Logger.e("item==" + item);
         if (!TextUtils.isEmpty(item)) {
 //            String thumbUrl = Utils.OriginalUrlToThumbUrl(item);
 //            GlideUtils.load(mContext, iv_pic, NetApi.IMG_SHOW_URL + thumbUrl);
-            GlideUtils.load(mContext, iv_pic, NetApi.IMG_SHOW_URL + item);
+
+            if (!item.startsWith("/opt")) {
+                GlideUtils.load(mContext, iv_pic, item);
+            } else {
+                GlideUtils.load(mContext, iv_pic, NetApi.IMG_SHOW_URL + item);
+            }
+
+
         }
 
-        helper.setOnClickListener(R.id.iv_photo, v -> showImg(NetApi.IMG_SHOW_URL + item));
+        helper.setOnClickListener(R.id.iv_photo, v -> {
+                    showImg(item);
+                }
+        );
     }
 
 
@@ -58,10 +69,10 @@ public class InsCommentPhotoAdapter extends BaseQuickAdapter<String, BaseViewHol
         alertDialog.show();
         window.setContentView(view);
 
-        if (ImgUrl.startsWith("/opt") || ImgUrl.startsWith("/filedev")) {
-            GlideUtils.load(mContext, userImg, NetApi.IMG_SHOW_URL + ImgUrl);
-        } else {
+        if (!ImgUrl.startsWith("/opt")) {
             GlideUtils.load(mContext, userImg, ImgUrl);
+        } else {
+            GlideUtils.load(mContext, userImg, NetApi.IMG_SHOW_URL + ImgUrl);
         }
         userImg.enable();
     }
